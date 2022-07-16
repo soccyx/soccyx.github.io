@@ -1,0 +1,99 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom right, rgb(238, 224, 192), rgb(157, 192, 201));
+  background-repeat: no-repeat;
+  
+  height: 100%;
+  background-attachment: fixed;
+/* position: relative; */
+
+}
+@font-face {
+  font-family: newFont;
+  src: url(NTR-Regular.ttf);
+}
+
+.botnav{
+  position: relative;
+  text-align: center;
+   background-color: rgba(8, 59, 117, 0.192);
+   font-size: 22px;
+   font-family:newFont, Arial, sans-serif;
+}
+.botnav a{
+   color: rgb(248, 233, 201);
+   text-align: center;
+   padding: 0px 30px;
+   text-decoration: none;
+}
+.botnav a:hover{
+   background-color:rgba(11, 23, 36, 0.322);
+   border-radius: 7px;
+   transition: 0.7s;
+}
+.botnav a.active {
+  border-radius: 8px;
+   background-color: rgba(177, 161, 110, 0.493);
+}
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  text-align: center;
+ 
+  color: white ;
+  
+}
+
+.cursor{
+  cursor: pointer;
+  margin:20px;
+position: relative;
+
+}
+@font-face {
+  font-family: newFont;
+  src: url(Delius-Regular.ttf);
+}
+
+.firstcontainer{
+  display: block;
+  margin:20px auto;
+  
+  /* margin: 20px auto ; */
+  /* position: relative; */
+width: 49%;
+
+background-color: rgba(255, 255, 255, 0.178);
+}
+#firstabout{
+
+  padding:10px 30px;
+  width:14%;
+position: absolute;
+top:40%;
+left:1025px;
+margin:20px;
+font-family: newFont;
+font-size: 13px;
+text-align: center;
+}
+.container{
+  background-color: rgba(255, 255, 255, 0.178);
+  display: block;
+  margin: 20px auto ;
+  position: relative;
+  width: 53%;
+}
+#about{
+  
+  padding:10px 30px;
+  width:14%;
+position: absolute;
+top:40%;
+left:750px;
+margin:20px;
+font-family: newFont;
+font-size: 13px;
+text-align: center;
+}

@@ -1,0 +1,129 @@
+html, body {
+  margin: 0;
+  padding: 0;
+ 
+  background: url(ISpy_.jpg), no-repeat center fixed;
+  background-size: cover;
+  
+}
+img{
+  position: absolute;
+ width: 1920px;
+ height: 935px;
+  opacity: 0;
+  
+}
+
+
+h2{
+  font-family: newFont;
+  position:absolute;
+  left:100px;
+  top: 40px;
+  background-color: rgba(0, 0, 0, 0.568);
+  padding:21px;
+  font-size: 30px;
+  color: rgba(231, 230, 230, 0.952);
+  border-radius: 6px;
+}
+/* mouse coords */
+/* #output{
+font-family: newFont;
+position:absolute;
+margin: auto;
+width: 100%;
+color: rgb(255, 255, 255);
+z-index:3;
+} */
+
+area:hover{
+  cursor: pointer;
+ 
+}
+@font-face {
+  font-family: newFont;
+  src: url(meowFont.otf);
+}
+
+
+/* modal stuff */
+
+body{
+  background-color: #edeef6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin:0;
+  
+}
+.modal_container{
+  
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 100vh;
+  width:100vw;
+  
+}
+.modal{
+  background-color: rgba(255, 253, 253, 0.671);
+  border-radius: 8px;
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 12px;
+}
+.modal-container{
+background-color: rgba(0, 0, 0, 0.3);
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+
+opacity: 0;
+pointer-events: none;
+
+transition: opacity 0.3s ease;
+
+top:0;
+left:0;
+height: 100vh;
+width: 100vw;
+}
+
+#close{
+  position: relative;
+ bottom: 7px;
+  background-color: rgba(20, 20, 20, 0.253);
+  border: 0;
+  border-radius: 5px;
+  color: rgb(255, 251, 251);
+  font-size: 24px;
+cursor: pointer;
+font-family: newFont;
+}
+
+#open{
+  position: relative;
+  top:400px;
+  left:900px;
+  background-color: rgba(166, 166, 185, 0.774);
+  border: 0;
+  border-radius: 5px;
+  color: rgb(255, 251, 251);
+  font-size: 30px;
+cursor: pointer;
+font-family: newFont;
+}
+
+
+.modal-container.show{
+  opacity:1;
+  pointer-events: auto;
+}
