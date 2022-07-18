@@ -12,7 +12,7 @@ function setup (){
     createCanvas(1290,720);
     background(bgColor);
     colorPicker = createColorPicker('black');
-    sizeSlider = createSlider(1, 500, 55);
+    sizeSlider = createSlider(1, 100, 2);
     
     
     eraser = createCheckbox('Erase', false);

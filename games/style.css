@@ -20,7 +20,7 @@ width:50%;
 font-family: newFont;
 color: rgb(255, 254, 251);
 padding:36px;
-background-color: rgba(58, 78, 116, 0.397);
+background-color: rgba(58, 78, 116, 0.658);
 
 font-size: 22px;
 }
@@ -162,8 +162,8 @@ font-size: 22px;
 .wtbackground{
 background-color: rgb(48, 56, 82);
 position:relative;
-padding:0px 20px;
-margin:5px 20px;
+padding:0px 60px;
+
 height:1320px;
 border-style: dotted;
 border-color: rgb(163, 170, 207);
@@ -189,7 +189,7 @@ border-color: rgb(163, 170, 207);
 }
 .gallerycontainer {
   position: relative;
-  width:55%;
+  width:51%;
   float:left;
 }
 .wtAbout{
@@ -214,9 +214,9 @@ border-color: rgb(163, 170, 207);
 .limbackground{
   background-color: rgb(161, 175, 219);
   position:relative;
-  padding:0px 70px;
-  margin:30px 75px;
-  height:1200px;
+  padding:0px 60px;
+  
+  height:1290px;
   border-style: dotted;
   border-color: rgb(255, 255, 255);
  
