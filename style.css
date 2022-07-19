@@ -1,0 +1,200 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom right, rgb(175, 179, 230), rgb(221, 200, 200), rgb(253, 211, 163));
+  background-repeat: no-repeat;
+  
+  height: 100%;
+  background-attachment: fixed;
+/* position: relative; */
+
+}
+@font-face {
+  font-family: newFont;
+  src: url(NTR-Regular.ttf);
+}
+
+.topnav{
+  overflow:hidden;
+   background-color: rgba(21, 65, 114, 0.336);
+   
+}
+.topnav a{
+   color: rgb(248, 233, 201);
+   position: relative;
+   
+   padding: 0px 17px;
+   text-decoration: none;
+}
+
+
+.headerImg{
+ 
+  background-image: url("headerImg.png");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.botnav{
+  position: relative;
+  text-align: center;
+  
+   background-color: rgba(8, 59, 117, 0.192);
+   font-size: 20px;
+   font-family:newFont, Arial, sans-serif;
+}
+.botnav a{
+   color: rgb(248, 233, 201);
+   text-align: center;
+   padding: 0px 30px;
+   text-decoration: none;
+}
+.botnav a:hover{
+   background-color:rgba(11, 23, 36, 0.151);
+   border-radius: 5px;
+   transition: 0.4s;
+}
+.botnav a.active {
+  border-radius: 5px;
+   background-color: rgba(177, 161, 110, 0.493);
+}
+h1{
+  font-family: newFont;
+  font-size: 35px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  color: white ;
+  z-index: 2;
+}
+
+.words{
+font-size: 22px;
+  background-color: rgba(241, 241, 239, 0.336);
+  width:55%;
+  margin: auto;
+  line-height: 29px;
+  padding:20px;
+  font-family: newFont;
+  color: rgb(35, 76, 146);
+}
+.about{
+  position: relative;
+  margin: 25px;
+}
+
+ /* ref https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+
+.somework{
+  color:rgb(92, 92, 92);
+  font-size: 27px;
+  font-family: newFont;
+  position: relative;
+  text-align: left;
+  margin: 0px 350px;
+  border-bottom: 3px solid rgb(206, 168, 168);
+ 
+}
+* {box-sizing: border-box}
+
+.image1 {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+  
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(255, 255, 255);
+  
+  width: 100%;
+  
+  opacity:0;
+  
+
+ transform: scale(0);
+ transition: .25s ease;
+}
+.webgame{
+  font-family: newFont;
+  text-align: center;
+  font-size: 25px;
+  color: #000;
+  font-weight: bold;
+}
+.te{
+  padding:0px 20px;
+  text-align: center;
+  font-size: 18px;
+  color:rgb(122, 121, 121);
+}
+.image1:hover .overlay {
+  opacity: 1;
+  transform: scale(0.87, 0.8);
+}
+
+.image2 {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+}
+.so {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.image2:hover .overlay {
+  opacity: 1;
+  transform: scale(0.87, 0.8);
+}
+.image3 {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.image3:hover .overlay {
+  opacity: 1;
+  transform: scale(0.87, 0.8);
+}
+.image4 {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+}
+.image4:hover .overlay {
+  opacity: 1;
+  transform: scale(0.87, 0.8);
+}
+.allImages{
+position: relative;
+padding: 15px;
+text-align: center;
+}
+ion-icon{
+font-size: 20px;
+padding:6px 0px;
+color:rgba(192, 171, 141, 0.795);
+}
