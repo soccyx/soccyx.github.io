@@ -9,26 +9,21 @@ var bgColor = 'white';
 
 
 function setup (){
-    createCanvas(1290,720);
+    createCanvas(1400,890);
     background(bgColor);
     colorPicker = createColorPicker('black');
     sizeSlider = createSlider(1, 100, 2);
-    
+   
     
     eraser = createCheckbox('Erase', false);
     drawCheckbox= createCheckbox('Draw', true);
-
-
-
-
-
-
-
-
-
-
-
+    
+    sizeSlider.position(0,50);
+    colorPicker.position(0, 70);
+    eraser.position(0,120);
+    drawCheckbox.position(0,100);
 }
+
 function clearBackground(){
     background(bgColor);
     clearButton.mousePressed(clearBackground);
@@ -40,9 +35,6 @@ if (mouseIsPressed){
 
 strokeWeight(sizeSlider.value());
 
-
-
-
   //erase when 'e' is pressed    
 if ((keyIsPressed == true) && (key == 'e')) {
     eraser.checked(true) && drawCheckbox.checked(false) && stroke(bgColor);
@@ -52,9 +44,6 @@ if ((keyIsPressed == true) && (key == 'e')) {
 if ((keyIsPressed == true) && (key == 'r')) {
     eraser.checked(false) && drawCheckbox.checked(true) && stroke(colorPicker.color());
 }
-
-
-
 
 }
 function myFunction() {
