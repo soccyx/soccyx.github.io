@@ -29,11 +29,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   
 }
-
-
-
-
-
 let slideIndex2 = 1;
 showSlides2(slideIndex2);
 
@@ -62,3 +57,54 @@ function showSlides2(n) {
   dots[slideIndex2-1].className += " active2";
   
 }
+
+let slideIndex3 = 1;
+showSlides3(slideIndex3);
+
+function plusSlides3(n) {
+  showSlides3(slideIndex3 += n);
+}
+function showSlides3(n) {
+  let i;
+  let slides = document.getElementsByClassName("theimages3");
+  let dots = document.getElementsByClassName("demo3");
+ 
+  if (n > slides.length) {slideIndex3 = 1}
+  if (n < 1) {slideIndex3 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace("active3", "");
+  }
+  slides[slideIndex3-1].style.display = "block";
+ 
+  
+}
+
+
+
+let slideIndex4 = 1;
+showSlides4(slideIndex4);
+
+function plusSlides4(n) {
+  showSlides4(slideIndex4 += n);
+}
+function showSlides4(n) {
+  let i;
+  let slides = document.getElementsByClassName("theimages4");
+  let dots = document.getElementsByClassName("demo4");
+ 
+  if (n > slides.length) {slideIndex4 = 1}
+  if (n < 1) {slideIndex4 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active4", "");
+  }
+  slides[slideIndex4-1].style.display = "block";
+  
+  
+}
+

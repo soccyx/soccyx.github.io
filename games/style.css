@@ -105,13 +105,57 @@ font-size: 22px;
 .cursor {
   cursor: pointer;
 }
+.numertext {
+  color: #ffffff;
+  font-size: 19px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 12px;
+  position: absolute;
+  top: 0;
+}
+.aboutRed{
+  font-family: newFont;
+  font-size: 20px;
+  color: rgb(133, 50, 50);
+  margin:3% ;
+  text-align: center;
+ padding:6px;
+  background-color: rgba(252, 252, 252, 0.26);
+}
+.aboutLightRed{
+  font-family: newFont;
+  font-size: 17.5px;
+  color: rgb(143, 105, 105);
+  margin:5%;
 
-.prev, .next{
+}
+.playhere{
+  position: relative;
+  color: rgba(2, 1, 0, 0.973);
+ 
+  padding:10px ;
+margin:auto;
+  font-family: newFont;
+  text-align: center;
+  font-size: large;
+  border-style: dotted;
+  border-color: white;
+}
+
+.gallerycontainer, .gallerycontainer2, .gallerycontainer4, .gallerycontainer3{
+position: relative;
+width:53%;
+float:left;
+margin-top:20px;
+}
+
+
+.prev, .next, .prev2, .next2{
   
   cursor: pointer;
   position: absolute;
   top: 0;
-  width: auto;
+  width:50px;
   height:90%;
   padding: 15px;
   
@@ -122,93 +166,66 @@ font-size: 22px;
   user-select: none;
   -webkit-user-select: none;
 }
+.prev3, .next3, .prev4, .next4{
+  
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width:50px;
+  height:100%;
 
-.next{
+  color: rgba(255, 255, 255, 0.753);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next, .next2{
+  right:0;
+  border-radius: 0 3px 3px 0;
+}
+.next3, .next4{
   right:0;
   border-radius: 0 3px 3px 0;
 }
 
-.prev:hover, .next:hover {
+.prev:hover, .next:hover, .prev2:hover, .next2:hover {
+  background-color: rgba(163, 157, 157, 0.151);
+}
+.prev3:hover, .next3:hover, .prev4:hover, .next4:hover {
   background-color: rgba(163, 157, 157, 0.151);
 }
 
-.numertext {
-  color: #f2f2f2;
-  font-size: 16px;
-  font-family: newFont;
-  padding: 12px;
-  position: absolute;
-  top: 0;
-}
-
-.roow:after {
+.roow:after, .roow2:after {
   content: "";
   display: table;
   clear: both;
 }
-.coolumn {
+
+.coolumn, .coolumn2 {
   float: left;
   width: 11%;
-  
 }
-.demo {
-  
+
+.demo,.demo2 {
   opacity: 0.6;
   color: rgba(0, 0, 0, 0.473);
 }
-.active, .demo:hover {
+
+.active, .demo:hover, .active2, .demo2:hover {
   opacity: 1;
 }
+
 .wtbackground{
-background-color: rgb(48, 56, 82);
+background-color: rgba(255, 255, 255, 0);
 position:relative;
 padding:0px 60px;
 
-height:1320px;
+height:1350px;
 border-style: dotted;
 border-color: rgb(163, 170, 207);
-}
-.theimages {
-    display: none;
-  }
-.Abouts{
-  position: relative;
-  color: rgba(90, 51, 3, 0.973);
- 
-  padding:20px;
-
-  font-family: newFont;
-  text-align: center;
-  font-size: large;
-}
-.processcontainer{
-  position: relative;
-  width:55%;
-  float:left;
-  padding:30px 30px;
-}
-.gallerycontainer {
-  position: relative;
-  width:51%;
-  float:left;
-}
-.wtAbout{
-  position: relative;
-  width:44%;
-  float:right;
- height:490px;
-
-  background-color: rgb(219, 217, 217);
-  box-shadow: rgb(33, 28, 99) 0px 0px 20px;
-}
-.videocontainer{
-  position: relative;
-  float:right;
-  padding:20px 30px;
-}
-.processimages{
-
- 
 }
 
 .limbackground{
@@ -216,86 +233,34 @@ border-color: rgb(163, 170, 207);
   position:relative;
   padding:0px 60px;
   
-  height:1290px;
+  height:1350px;
   border-style: dotted;
   border-color: rgb(255, 255, 255);
  
-  }
-  .prev2, .next2{
-  
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    width: auto;
-    height:90%;
-    padding: 15px;
-    
-    color: rgba(255, 255, 255, 0.753);
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  .next2{
-    right:0;
-    border-radius: 0 3px 3px 0;
-  }
-  
-  .prev2:hover, .next2:hover {
-    background-color: rgba(163, 157, 157, 0.151);
-  }
-  
-  
-  .roow2:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .coolumn2 {
-    float: left;
-    width: 11%;
-  }
-  .demo2 {
-    opacity: 0.6;
-    color: rgba(0, 0, 0, 0.473);
-  }
-  .active2, .demo2:hover {
-    opacity: 1;
-   }
- 
-  .theimages2 {
-      display: none;
-    }
-  .limprocess{
-    position: relative;
-    width:50%;
-    float:left;
-    padding:40px 0px;
-  }
-  .processimages2{
-
- 
-  }
-  .gallerycontainer2 {
-    position: relative;
-    width:51%;
-    float:left;
   }
   .limAbout{
     position: relative;
     width:44%;
     float:right;
    height:490px;
-  
+   border-radius: 5px;
     background-color: rgb(219, 217, 217);
     box-shadow: rgb(214, 212, 219) 0px 0px 20px;
+    margin-top:20px;
   }
-  .limvideo{
+  .wtAbout{
+    position: relative;
+    width:44%;
+    float:right;
+   height:490px;
+   margin-top:20px;
+  border-radius: 5px;
+    background-color: rgb(219, 217, 217);
+    box-shadow: rgb(184, 182, 204) 0px 0px 20px;
+  }
+ 
+  .videocontainer, .limvideo{
     position: relative;
     float:right;
-    padding:20px 0px;
+    
   }
-
-
