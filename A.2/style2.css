@@ -1,0 +1,83 @@
+
+body{
+    background-color:rgb(64, 68, 94);
+    margin:0;
+    padding:0;
+}
+canvas {
+    position: relative;
+    display: block;
+    justify-content: center;
+   
+    margin:auto;
+   
+ border-radius: 5px;
+ }
+
+.test{
+  color: white;
+}
+p{
+  text-align: center;
+  color: white;
+}
+
+.hmh{
+    
+    position:absolute;
+   
+    display:block;
+    /* top:40px; */
+    margin:auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size:larger;
+}
+#text{
+    position: absolute;
+    color:white;
+}
+
+
+
+.bu {
+    cursor: pointer;
+    position: relative;
+    top:150px;
+    
+   --button_radius: 10px;
+   --button_color: #e8e8e8;
+   border: none;
+   border-radius: var(--button_radius);
+   background: var(--button_outline_color);
+   
+  }
+.clearButton {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    
+    border-radius: var(--button_radius);
+    padding: 7px 10px;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+   }
+   
+   .bu:hover .clearButton {
+     /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+   }
+   
+   .bu:active .clearButton {
+     /* Push the button downwards when pressed */
+    transform: translateY(0);
+   }
+
+
+  
+
+  
