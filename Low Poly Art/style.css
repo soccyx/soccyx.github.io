@@ -1,0 +1,209 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(15, 37, 56);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-attachment: fixed;
+}
+@font-face {
+  font-family: newFont;
+  src: url(NTR-Regular.ttf);
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.botnav{
+  position: relative;
+  text-align: center;
+   background-color: rgba(69, 103, 143, 0.192);
+   font-size: 20px;
+   font-family:sans-serif;
+   padding:6px;
+
+}
+
+.botnav a{
+   color: rgba(248, 233, 201, 0.753);
+   text-align: center;
+   padding: 6px 30px;
+   text-decoration: none;
+   position: relative;
+   
+}
+.botnav a:hover{
+   background-color:rgba(56, 68, 80, 0.473);
+   border-radius: 5px;
+  
+}
+.botnav a.active {
+  border-radius: 5px;
+   background-color: rgba(56, 68, 80, 0.473);
+
+}
+h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  text-align: center;
+ padding: 15px;
+  color: white ;
+  border-style: dotted;
+  border-color: rgba(99, 97, 97, 0.445);
+  margin: 20px 210px;
+}
+
+
+p{
+  font-family:newFont;
+
+  text-align: center;
+  color: white;
+}
+
+.firstsketchfab{
+  padding: 30px;
+  margin: auto;
+  display: block;
+  border-bottom: rgba(171, 196, 211, 0.479);
+  border-bottom-style: solid;
+}
+
+
+.midsketchfabs{
+  margin:0px 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.basicfurni{
+  padding:10px;
+  flex: 25%;
+  
+}
+.plantPics{
+position: relative;
+
+ width:50%;
+ left:25%;
+
+ text-align: center;
+ border-bottom: rgba(171, 196, 211, 0.479);
+  border-bottom-style: solid;
+  padding-bottom: 30px;
+}
+.sqwee{
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #f2f2f227;
+}
+.heads{
+  position: relative;
+
+  width:80%;
+  left:10%;
+  padding:30px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  margin: auto;
+  display: block;
+  position: relative;
+  max-width:720px;
+
+
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(228, 228, 228);
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.233);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 22px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: newFont;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 14%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+

@@ -9,7 +9,7 @@ var bgColor = 'white';
 
 
 function setup (){
-    createCanvas(1400,890);
+    createCanvas(1500, 820);
     background(bgColor);
     colorPicker = createColorPicker('black');
     sizeSlider = createSlider(1, 100, 2);
@@ -18,10 +18,10 @@ function setup (){
     eraser = createCheckbox('Erase', false);
     drawCheckbox= createCheckbox('Draw', true);
     
-    sizeSlider.position(0,50);
-    colorPicker.position(0, 70);
-    eraser.position(0,120);
-    drawCheckbox.position(0,100);
+    sizeSlider.position(40,50);
+    colorPicker.position(40, 70);
+    eraser.position(40,120);
+    drawCheckbox.position(40,100);
 }
 
 function clearBackground(){

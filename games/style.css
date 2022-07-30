@@ -167,16 +167,15 @@ margin-top:20px;
   -webkit-user-select: none;
 }
 .prev3, .next3, .prev4, .next4{
-  
   cursor: pointer;
   position: absolute;
-  top: 0;
-  width:50px;
-  height:100%;
-
-  color: rgba(255, 255, 255, 0.753);
+  top: 55%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 35px;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
@@ -195,7 +194,7 @@ margin-top:20px;
   background-color: rgba(163, 157, 157, 0.151);
 }
 .prev3:hover, .next3:hover, .prev4:hover, .next4:hover {
-  background-color: rgba(163, 157, 157, 0.151);
+  background-color: rgba(223, 223, 223, 0.411);
 }
 
 .roow:after, .roow2:after {
